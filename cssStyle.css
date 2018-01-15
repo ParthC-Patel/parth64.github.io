@@ -1,0 +1,107 @@
+.container {
+	 overflow-x: hidden;
+	 width: 80%;
+	 margin: auto;
+}
+
+body {
+	font: 15px/1.5 Helvetica, Helvetica, Helvetica; 
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	background: rgb(245,245,245);
+	max-width: 100%;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	background: slateblue;
+	border-bottom: white 3px solid;
+}
+header a{
+	text-decoration: none;
+	color: white;
+}
+
+header h1{
+	margin: 0px;
+	padding: 5px;
+	float: left;
+	color: white;
+}
+#cpp {
+	color: darkslateblue;
+}
+
+header ul {
+		float: right;
+		position: relative;
+		top: 3px;
+}
+header li {
+	padding-left: 30px;
+	display: inline;
+	color: white;
+}
+header li a:hover {
+	color: darkslateblue;
+}
+
+#Top{
+	background: url(quoteBackground.jpg) no-repeat 0 0;
+	background-size: cover;
+	background-position: center;
+	padding-top: 200px;
+	padding-bottom: 100px; 
+	border-bottom: white 3px solid;
+
+	text-align: center;
+	text-shadow: 1px 1px rgb(30,30,30);
+	color: white;
+}
+
+#Top h1{
+	font-size: 30px;
+}
+
+#Top h2{
+	font-style: italic;
+	font-size: 20px;
+}
+
+.title {
+	position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    max-width: 22%;
+    text-align: right;
+    color: darkslateblue;
+    background: rgb(245,245,245);
+}
+
+.tile {
+	background: white;
+	border-radius: 10px;
+	margin-left: 22%;
+	margin-right: 10%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+footer {
+	margin-top: 100px;
+	background: slateblue;
+	color: white;
+	padding: 10px;
+	padding-left: 0px;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
