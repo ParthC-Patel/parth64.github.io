@@ -16,7 +16,7 @@ body {
 header {
 	position: fixed;
 	width: 100%;
-	background: slateblue;
+	background: rgb(24,33,83);
 	border-bottom: white 3px solid;
 }
 header a{
@@ -30,8 +30,8 @@ header h1{
 	float: left;
 	color: white;
 }
-#cpp {
-	color: darkslateblue;
+#middle {
+	color: rgb(24,33,83);
 }
 
 header ul {
@@ -45,7 +45,7 @@ header li {
 	color: white;
 }
 header li a:hover {
-	color: darkslateblue;
+	color: rgb(194,203,253);
 }
 
 #Top{
@@ -76,7 +76,7 @@ header li a:hover {
     top: 60px;
     max-width: 22%;
     text-align: right;
-    color: darkslateblue;
+    color: rgb(24,33,83);
     background: rgb(245,245,245);
 }
 
@@ -90,9 +90,13 @@ header li a:hover {
 	padding: 20px;
 }
 
+.tile a {
+	color: rgb(24,33,83);
+}
+
 footer {
 	margin-top: 100px;
-	background: slateblue;
+	background: rgb(24,33,83);
 	color: white;
 	padding: 10px;
 	padding-left: 0px;
