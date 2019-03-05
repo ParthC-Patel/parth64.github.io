@@ -12,14 +12,19 @@
 <script>
 
 jQuery(document).ready(function($){
-	// Slowly fade in header background
+	// Slowly fade in header background and decrease name size
 	$('.header').css("background-color", "transparent").css("bottom-border", "none");
 	$(window).scroll(function(){
+	
+		$('.header h1').css("font-size", "55px");
+		$('.header h1').css("line-height", "20px");
+
 		if ($(this).scrollTop() > 400) {
 			$('.header').css("background-color", "rgba(24,33,83,1)")
-			$('.name').animate({right: '10px'}, "slow");
+			$('.header h1').css("font-size", "30px").css("line-height", "40px");
 		} else {
 			$('.header').css("background-color", "rgba(24,33,83," + $(this).scrollTop()/400 + ")")	
+			$('.header h1').css("font-size", 55 - $(this).scrollTop()/16 + "px").css("line-height", 20 + $(this).scrollTop()/20 + "px");
 		} 
 	});
 });
@@ -36,6 +41,8 @@ $(document).ready(function(){
   	});
 });
 
+
+
 </script>
 
 
@@ -43,7 +50,7 @@ $(document).ready(function(){
 	<div class="header">
 		<div class="container">
 			<h1> 
-				<a href="#Top"> Parth <!--<span id="middle">middle</span> --> Patel </a> 
+				<a href="#Top"> Parth <!--<span id="middle">middle</span> --> Patel </a>
 			</h1>
 
 			<ul>

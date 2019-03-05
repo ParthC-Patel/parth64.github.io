@@ -26,6 +26,8 @@ body {
 }
 
 .header h1 {
+	font-size: 55px;
+	line-height: 20px;
 	padding-left: 15px;
 	float: left;
 }
@@ -34,7 +36,6 @@ body {
 	position: relative;
 }
 .header li {
-	font: 15px/1.5 Helvetica, Helvetica, Helvetica; 
 	padding-left: 30px;
 	display: inline;
 }
@@ -47,7 +48,7 @@ body {
 .header li button {
 	font: 15px/1.5 Helvetica, Helvetica, Helvetica; 
 	padding: 15px 30px;
-	margin: 0;
+	margin: 0px;
 	background-color: rgb(76, 176, 79); 
 	border: none;
 }
