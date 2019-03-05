@@ -13,42 +13,47 @@ body {
 	max-width: 100%;
 }
 
-header {
+.header {
 	position: fixed;
 	width: 100%;
-	background: rgb(24,33,83);
-	border-bottom: white 3px solid;
+	background: transparent;
+	height: 80px;
 }
-header a{
+
+.header a{
 	text-decoration: none;
 	color: white;
 }
 
-header h1{
-	margin: 0px;
-	padding: 5px;
+.header h1 {
+	padding-left: 15px;
 	float: left;
-	color: white;
 }
-#middle {
-	color: rgb(24,33,83);
+.header ul {
+	float: right;
+	position: relative;
 }
-
-header ul {
-		float: right;
-		position: relative;
-		top: 3px;
-}
-header li {
+.header li {
+	font: 15px/1.5 Helvetica, Helvetica, Helvetica; 
 	padding-left: 30px;
 	display: inline;
-	color: white;
 }
-header li a:hover {
+.header li a {
+	transition: color 0.1s ease-in-out;
+}
+.header li a:hover {
 	color: rgb(194,203,253);
+}
+.header li button {
+	font: 15px/1.5 Helvetica, Helvetica, Helvetica; 
+	padding: 15px 30px;
+	margin: 0;
+	background-color: rgb(76, 176, 79); 
+	border: none;
 }
 
 #Top{
+	height: 200px;
 	background: url(quoteBackground.jpg) no-repeat 0 0;
 	background-size: cover;
 	background-position: center;
@@ -73,7 +78,7 @@ header li a:hover {
 .title {
 	position: -webkit-sticky;
     position: sticky;
-    top: 60px;
+    top: 83px;
     max-width: 22%;
     text-align: right;
     color: rgb(24,33,83);
