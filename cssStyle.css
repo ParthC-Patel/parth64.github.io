@@ -79,7 +79,7 @@ body {
 .title {
 	position: -webkit-sticky;
     position: sticky;
-    top: 83px;
+    top: 80px;
     max-width: 22%;
     text-align: right;
     color: rgb(24,33,83);

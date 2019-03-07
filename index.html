@@ -12,10 +12,38 @@
 <script>
 
 jQuery(document).ready(function($){
-	// Slowly fade in header background and decrease name size
+	// Slowly fade in header background, decrease name size, and bold menu elements
 	$('.header').css("background-color", "transparent").css("bottom-border", "none");
 	$(window).scroll(function(){
 	
+		if ( $(this).scrollTop() > 0) {
+		if ( $(this).scrollTop() > $('#Internships').offset().top - 80 && $(this).scrollTop() < $('#Projects').offset().top - 80){
+			$('internships').css("color", "rgb(76, 176, 79)")
+			$('projects').css("color", "white")
+			$('activities').css("color", "white")
+			$('contact').css("color", "white")
+		} else if ( $(this).scrollTop() > $('#Projects').offset().top - 80 && $(this).scrollTop() < $('#Activities').offset().top - 80){
+			$('internships').css("color", "white")
+			$('projects').css("color", "rgb(76, 176, 79)")
+			$('activities').css("color", "white")
+			$('contact').css("color", "white")
+		} else if ( $(this).scrollTop() > $('#Activities').offset().top - 80 && $(this).scrollTop() < $('#Contact').offset().top - 80){
+			$('internships').css("color", "white")
+			$('projects').css("color", "white")
+			$('activities').css("color", "rgb(76, 176, 79)")
+			$('contact').css("color", "white")
+		} else if ( $(this).scrollTop() > $('#Contact').offset().top - 80 ) {
+			$('internships').css("color", "white")
+			$('projects').css("color", "white")
+			$('activities').css("color", "white")
+			$('contact').css("color", "rgb(76, 176, 79)")
+		} else {
+			$('internships').css("color", "white")
+			$('projects').css("color", "white")
+			$('activities').css("color", "white")
+			$('contact').css("color", "white")
+		}
+
 		$('.header h1').css("font-size", "55px");
 		$('.header h1').css("line-height", "20px");
 
@@ -26,6 +54,7 @@ jQuery(document).ready(function($){
 			$('.header').css("background-color", "rgba(24,33,83," + $(this).scrollTop()/400 + ")")	
 			$('.header h1').css("font-size", 55 - $(this).scrollTop()/16 + "px").css("line-height", 20 + $(this).scrollTop()/20 + "px");
 		} 
+		}
 	});
 });
 
@@ -54,11 +83,11 @@ $(document).ready(function(){
 			</h1>
 
 			<ul>
-				<li> <internships> <a href="#Internships" >Internships</a> </internships> </li>
-				<li> <projects> <a href="#Projects">Projects</a> </projects> </li>
-				<li> <activities> <a href="#Activities">Activities</a> </activities> </li>
-				<li> <contact> <a href="#Contact">Contact</a> </contact> </li>
-				<li> <button> <a href="Resume.html">Resume</a> </button> </li>
+				<li>  <a href="#Internships" > <internships> Internships </internships> </a>  </li>
+				<li>  <a href="#Projects"> <projects> Projects </projects> </a>  </li>
+				<li>  <a href="#Activities"> <activities> Activities </activities> </a> </li>
+				<li>  <a href="#Contact"> <contact> Contact </contact> </a> </li>
+				<li>  <a href="Resume.html"> <button> Resume </button> </a> </li>
 			</ul>
 	
 		</div>
@@ -89,10 +118,12 @@ $(document).ready(function(){
 		</div>
 	</section>
 	<section class="tile">
-		<h3>Top</h3>
-		<p> 
-			Bottom
-		</p>
+		<h3>Bmo Capital Markets - Technology Analyst</h3>
+		<ul> 
+			<li>Lead developer on initiative to automate regression testing of FIS BondOne system, greatly increasing scope with over 500 unique trades, and shortening process from 3 days to 1 hour (Java, SQL, Visual Basic).</li>
+			<li>Supported development and maintenance for Calypso trading system by implementing requested features and resolving bugs (Java, Python).</li>
+			<li>Created queries to modify database for testing purposes and also to generate various reports (SQL).</li>
+		</ul>
 	</section>
 	<section class="tile">
 		<h3>Top</h3>
@@ -156,8 +187,6 @@ $(document).ready(function(){
 			Bottom
 		</p>
 	</section>
-
-
 
 
 
